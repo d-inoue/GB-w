@@ -1,0 +1,38 @@
+{
+  "name": "gulp-bower-wordpress",
+  "version": "1.0.0",
+  "description": "gulp+bower",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "bower"
+  ],
+  "private": true,
+  "author": "dinoue",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "browserify": "^9.0.8",
+    "gulp": "^3.9.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-filter": "^3.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-pleeease": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-watchify": "^0.5.0",
+    "main-bower-files": "^2.9.0",
+    "merge-stream": "^1.0.0",
+    "time-require": "^0.1.2",
+    "watchify": "^3.4.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,17 @@
+//bootstrap
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+
+//fontawesome
+@import "../../bower_components/fontawesome/scss/font-awesome";
+
+//pure / IE9 or higher needed for media query
+//@import "../../bower_components/sass-pure/pure";
+//@import "http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css";
+
+//sass-mediaqueries
+@import "../../bower_components/sass-mediaqueries/media-queries";
+// @include min-screen(768px) { ... }
+// @include max-screen(1024px) { ... }
+//It will be compiled to:
+// @media screen and (min-width: 768px) { ... }
+// @media screen and (max-width: 1024px) { ... }

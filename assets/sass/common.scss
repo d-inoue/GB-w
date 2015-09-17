@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*compass*/
+//all
+//@import "compass";
+//or selected
+//@import "compass/support";
+//@import "compass/css3";
+//@import "compass/layout";
+//@import "compass/reset";
+//@import "compass/typography";
+//@import "compass/utilities";
+/*common*/
+@import "common_inc";
+/* BEM */
+.block { /* block */
+    //color: #fff;
+    //flex-direction: column;
+    background: linear-gradient(red, blue);
+    //margin: 0;
+    &__element1 { /* element */
+        width: 30px;
+　      &_modifier1 { /* modifier */
+            background-color: #ccc;
+        }
+        &_modifier2 { /* modifier */
+            background-color: #111;
+            &_modifier3 { /* modifier */
+                color: #ddd;
+            }
+            &_modifier4 { /* modifier */
+                color: #ccc;
+            }
+        }
+    }
+    &__element2 { /* element */
+        width: 60px;
+    }
+}
