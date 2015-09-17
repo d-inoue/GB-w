@@ -15,16 +15,16 @@ var streamify      = require('gulp-streamify');
 var merge          = require('merge-stream');
 var please         = require('gulp-pleeease');
 //browserSyncを使用する場合は、以下とこのファイル最後のwatchとdefaultタスクのコメントを外す
-// var browserSync    = require('browser-sync').create();
-// var reload         = browserSync.reload;
-// /** browser-sync **/
-// var source        = "./**/*";
-// gulp.task('browser-sync', function() {
-//   browserSync.init({
-//     proxy: "192.168.33.12",
-//     open: 'external'
-//   });
-// });
+var browserSync    = require('browser-sync').create();
+var reload         = browserSync.reload;
+/** browser-sync **/
+var source        = "./**/*";
+gulp.task('browser-sync', function() {
+  browserSync.init({
+    proxy: "192.168.33.12",
+    open: 'external'
+  });
+});
 
 //経過時間を知りたい場合は、以下のコメントを外す
 //require("time-require");
@@ -191,7 +191,7 @@ gulp.task('default',[
   'cssMin_Lib',
   'cssMin',
   'browserify',
-  //'browser-sync',
+  'browser-sync',
   'watch'
   ]
 );
